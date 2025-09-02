@@ -166,7 +166,7 @@ export default function Home() {
         <TodaysReminder />
 
         <div className="mb-6 flex flex-wrap gap-4 items-center justify-between">
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <Button
               onClick={() => setShowForm(true)}
               className="bg-purple-400 hover:bg-purple-500 text-white scannable-text"
