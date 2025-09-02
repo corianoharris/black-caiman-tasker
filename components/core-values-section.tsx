@@ -66,7 +66,7 @@ export default function CoreValuesSection() {
           </CardTitle>
           <div className="flex gap-2">
             {isTodaysValue && (
-              <Badge className="bg-black text-white text-pretty-bold border-black scannable-small hover:bg-black hover:text-white" >
+              <Badge className="bg-black text-white font-semibold border-black scannable-small hover:bg-black hover:text-white" >
                 <Target className="w-3 h-3 mr-1" />
                 Today's Focus
               </Badge>
