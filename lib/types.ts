@@ -46,6 +46,7 @@ export type UserStats = {
 }
 
 export type TimeBlock = {
+  description: any
   id: string
   startTime: string
   endTime: string

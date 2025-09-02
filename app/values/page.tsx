@@ -70,7 +70,7 @@ export default function ValuesPage() {
               </CardTitle>
               <div className="flex gap-2">
                 {isTodaysValue && (
-                  <Badge className="bg-emerald-500 text-white border-emerald-400 scannable-small">Today's Focus</Badge>
+                  <Badge className="bg-black text-white scannable-small hover:bg-white hover:text-black">Today's Focus</Badge>
                 )}
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function ValuesPage() {
               </div>
 
               {/* Quick Navigation Controls */}
-              <div className="flex items-center justify-between">
+              <div className="flex flex-wrap items-center justify-between gap-2">
                 <Button
                   variant="outline"
                   size="sm"

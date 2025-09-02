@@ -335,7 +335,7 @@ export default function ManifestoPage() {
                 <li className="scannable-text">• Choose discomfort on purpose.</li>
                 <li className="scannable-text">• When the moment comes, you're prepared.</li>
               </ul>
-              <p className="italic text-emerald-700 scannable-text">"What breaks them, builds me."</p>
+              <p className="italic text-lg text-black scannable-text">"What breaks them, builds me."</p>
             </div>
           </CardContent>
         </Card>

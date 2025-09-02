@@ -66,7 +66,7 @@ export default function CoreValuesSection() {
           </CardTitle>
           <div className="flex gap-2">
             {isTodaysValue && (
-              <Badge className="bg-emerald-500 text-white border-emerald-400 scannable-small">
+              <Badge className="bg-black text-white scannable-small hover:bg-black hover:text-white" >
                 <Target className="w-3 h-3 mr-1" />
                 Today's Focus
               </Badge>
@@ -95,50 +95,50 @@ export default function CoreValuesSection() {
           </div>
 
           {/* Quick Navigation Controls */}
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap gap-2 mt-4 items-center justify-between">
             <Button
               variant="outline"
               size="sm"
               onClick={prevValue}
-              className="border-purple-400 text-purple-800 hover:bg-purple-100 bg-transparent scannable-text"
+              className="border-purple-400 text-purple-800 hover:bg-purple-100 bg-transparent scannable-text flex-1"
             >
               <ChevronLeft className="w-4 h-4 mr-1" />
               Previous
             </Button>
 
-            <div className="flex gap-2">
+       
               <Button
                 variant="outline"
                 size="sm"
                 onClick={goToTodaysValue}
-                className="border-purple-400 text-purple-800 hover:bg-purple-100 bg-transparent scannable-text"
+                className="border-purple-400 text-purple-800 hover:bg-purple-100 bg-transparent scannable-text flex-1"
                 disabled={isTodaysValue}
               >
                 <Target className="w-4 h-4 mr-1" />
                 Today's Value
               </Button>
+
               <Button
                 variant="outline"
                 size="sm"
                 onClick={randomValue}
-                className="border-purple-400 text-purple-800 hover:bg-purple-100 bg-transparent scannable-text"
+                className="border-purple-400 text-purple-800 hover:bg-purple-100 bg-transparent scannable-text flex-1"
               >
                 <Shuffle className="w-4 h-4 mr-1" />
                 Random
               </Button>
-            </div>
 
-            <Button
+              <Button
               variant="outline"
               size="sm"
               onClick={nextValue}
-              className="border-purple-400 text-purple-800 hover:bg-purple-100 bg-transparent scannable-text"
+              className="border-purple-400 text-purple-800 hover:bg-purple-100 bg-transparent scannable-text flex-1"
             >
               Next
               <ChevronRight className="w-4 h-4 ml-1" />
             </Button>
+            </div>
           </div>
-        </div>
 
         {/* Current Value Display */}
         <div className="text-center">

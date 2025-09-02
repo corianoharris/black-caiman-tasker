@@ -184,7 +184,7 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center flex-wrap">
             <Filter className="w-4 h-4 text-gray-500" />
             <Button
               variant={filter === "all" ? "default" : "outline"}

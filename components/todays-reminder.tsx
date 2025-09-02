@@ -49,7 +49,7 @@ export default function TodaysReminder() {
         )}
 
         {/* Action Buttons */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-wrap gap-2">
           <Button
             variant="outline"
             size="sm"
