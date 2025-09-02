@@ -270,7 +270,7 @@ export default function PhilosophyPage() {
                     {/* Connections Section */}
                     {section.id === "connections" && (
                       <>
-                        {section.content.subsections.map((subsection, index) => (
+                        {section?.content?.subsections?.map((subsection, index) => (
                           <div key={index} className="space-y-2">
                             <h4 className="font-semibold text-purple-800 scannable-heading">{subsection.title}</h4>
                             <ul className="space-y-1 text-sm ml-4">
@@ -294,7 +294,7 @@ export default function PhilosophyPage() {
                     {/* Contact & Romantic Section */}
                     {section.id === "contact-romantic" && (
                       <>
-                        {section.content.subsections.map((subsection, index) => (
+                        {section?.content?.subsections?.map((subsection, index) => (
                           <div key={index} className="space-y-3">
                             <h4 className="font-semibold text-purple-800 scannable-heading">{subsection.title}</h4>
                             <ul className="space-y-2 text-sm ml-4">
@@ -309,7 +309,7 @@ export default function PhilosophyPage() {
                         <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
                           <h5 className="font-semibold text-purple-800 mb-2 scannable-heading">Daily Mantras:</h5>
                           <ul className="space-y-1">
-                            {section.content.dailyMantras.map((mantra, index) => (
+                            {section?.content?.dailyMantras?.map((mantra, index) => (
                               <li key={index} className="text-purple-700 italic scannable-text">
                                 • "{mantra}"
                               </li>
@@ -323,7 +323,7 @@ export default function PhilosophyPage() {
                     {section.id === "financial-code" && (
                       <>
                         <div className="space-y-4">
-                          {section.content.principles.map((principle, index) => (
+                          {section?.content?.principles?.map((principle, index) => (
                             <div key={index} className="bg-purple-50 p-4 rounded-lg border border-purple-200">
                               <h4 className="font-semibold text-purple-800 mb-2 scannable-heading">
                                 {index + 1}. {principle.title}
@@ -346,7 +346,7 @@ export default function PhilosophyPage() {
                     {section.id === "life-organization" && (
                       <>
                         <div className="space-y-4">
-                          {section.content.areas.map((area, index) => (
+                          {section?.content?.areas?.map((area, index) => (
                             <div key={index} className="bg-purple-50 p-4 rounded-lg border border-purple-200">
                               <h4 className="font-semibold text-purple-800 mb-2 scannable-heading">
                                 {index + 1}. {area.title}

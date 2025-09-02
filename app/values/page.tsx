@@ -70,7 +70,7 @@ export default function ValuesPage() {
               </CardTitle>
               <div className="flex gap-2">
                 {isTodaysValue && (
-                  <Badge className="bg-black text-white scannable-small hover:bg-white hover:text-black">Today's Focus</Badge>
+                  <Badge className="bg-black text-white text-pretty-bold  scannable-small hover:bg-white hover:text-black">Today's Focus</Badge>
                 )}
               </div>
             </div>

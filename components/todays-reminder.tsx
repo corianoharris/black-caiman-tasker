@@ -27,7 +27,7 @@ export default function TodaysReminder() {
             <div className="text-lg font-bold text-white">Today's Core Value</div>
             <div className="text-sm text-purple-200">{todaysValue.title}</div>
           </div>
-          <Badge className="bg-purple-500 text-white border-purple-400">Daily Focus</Badge>
+          <Badge className="bg-purple-500 text-white text-pretty-bold border-purple-400">Daily Focus</Badge>
         </div>
 
         {/* Today's Reminder - White Background with Green Text */}
